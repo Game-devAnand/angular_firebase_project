@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h1>Prodect</h1>
+  <i class="bi bi-plus-square-fill" (click)="addProduct()"></i>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Discreption</th>
+        <th scope="col">Price</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products">
+        <th scope="row">1</th>
+        <td>{{item.title}}</td>
+        <td>{{item.dec}}</td>
+        <td>{{item.price}}</td>
+        <td><i class="bi bi-pen" (click)="editProduct(item.doc_id)"></i></td>
+        <td><i class="bi bi-trash3" (click)="removeP()"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

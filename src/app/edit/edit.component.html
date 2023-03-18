@@ -1,0 +1,46 @@
+<div class="container mt-5 pt-5" style="width: 500px">
+  <div class="card" style="padding: 20px">
+    <form [formGroup]="productForm">
+      <h3>Update Product</h3>
+      <!--input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example1">Title</label>
+        <input
+          type="text"
+          id="form1Example1"
+          formControlName="title"
+          class="form-control"
+        />
+      </div>
+      <!--input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example1">Description</label>
+        <input
+          type="text"
+          id="form1Example1"
+          formControlName="dec"
+          class="form-control"
+        />
+      </div>
+      <!--input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example1">Price</label>
+        <input
+          type="text"
+          id="form1Example1"
+          formControlName="price"
+          class="form-control"
+        />
+      </div>
+      <!-- Submit button -->
+      <button
+        type="submit"
+        class="btn btn-primary btn-block"
+        (click)="update()"
+        [disabled]="productForm.invalid"
+      >
+        Change
+      </button>
+    </form>
+  </div>
+</div>

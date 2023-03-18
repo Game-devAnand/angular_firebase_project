@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularproject-ff29e": {
+      "hosting": {
+        "firebase_project": [
+          "angularproject-ff29e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularproject-ff29e"
+  }
+}
